@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfólio - Alexandre Rytchko</title>
+    <meta
+      name="description"
+      content="Portfólio de Alexandre Rytchko - Desenvolvedor Front-end"
+    />
+    <meta name="author" content="Alexandre Rytchko" />
+
+    <meta property="og:title" content="Portfólio - Alexandre Rytchko" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor Front-end especializado em React e interfaces modernas"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/Jz6xHYbQ/ingolfur.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="Portfólio Alexandre Rytchko" />
+    <meta name="twitter:title" content="Portfólio - Alexandre Rytchko" />
+    <meta
+      name="twitter:description"
+      content="Desenvolvedor Front-end especializado em React e interfaces modernas"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bigger-picture@1.1.20/dist/bigger-picture.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bigger-picture@1.1.20/dist/bigger-picture.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        padding: 20px;
+        max-width: 1240px;
+        margin: 0 auto;
+      }
+
+      .grid a {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+        cursor: zoom-in;
+      }
+
+      .grid img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- preloader -->
+    <div id="preloader">
+      <div class="spinner" id="spinner"></div>
+    </div>
+
+    <!-- header -->
+    <header class="s-header">
+      <div class="header-content">
+        <nav class="row header-nav-wrap">
+          <ul class="header-nav">
+            <li><a class="smoothscroll active-link" href="#hero">Início</a></li>
+            <li><a class="smoothscroll" href="#projects">Projetos</a></li>
+            <li><a href="mailto:seuemail@email.com">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="/images/Curriculo Alexandre Rytchko.pdf" class="btn btn--stroke btn--small">Baixar CV</a>
+      </div>
+
+      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- hero -->
+    <section
+      id="hero"
+      class="s-hero target-section"
+      data-parallax="scroll"
+      data-image-src="images/hero-bg.jpg"
+    >
+      <div class="row hero-content">
+        <div class="column large-full">
+          <h1>
+            Olá, eu sou Alexandre Rytchko, <br />
+            desenvolvedor full-stack <br />
+            focado em Front End em React e Tailwind <br />
+          </h1>
+
+          <ul class="hero-social">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexandrerytchko/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/arcps"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li><a href="mailto:alexandrerytchko@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="projects" class="s-portfolio target-section">
+      <div class="row s-portfolio__header">
+        <div class="column large-6 medium-8 tab-full">
+          <div class="section-intro" data-aos="fade-up">
+            <h1 class="display-1">Projetos</h1>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row s-portfolio__list block-large-1-2 block-tab-full collapse"
+      >
+        <!--         <div
+          class="column card"
+          data-aos="fade-up"
+          v-for="(portfolio, index) in portfolios"
+          :key="index"
+        >
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <div class="folio-item__thumb-link">
+                <img :src="portfolio.imgLink" alt="" />
+              </div>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">{{ portfolio.techStack }}</div>
+              <h4 class="folio-item__title">{{ portfolio.title }}</h4>
+            </div>
+            <div class="folio-item__project-link">
+              <a :href="portfolio.githubLink">Código</a>
+              |
+              <a :href="portfolio.projectLink">Projeto</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="grid" id="gallery">
+        <a
+          href="images/portfolio/nnbadvogados.jpg"
+          data-img="images/portfolio/nnbadvogados.jpg"
+          data-height="4110"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/nnbadvogados_thumb.jpg"
+            alt="NNB Advogados"
+          />
+        </a>
+        <a
+          href="images/portfolio/Pipecontenthouse.jpg"
+          data-img="images/portfolio/Pipecontenthouse.jpg"
+          data-height="3957"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/Pipecontenthouse_thumb.jpg"
+            alt="Pipe Content House"
+          />
+        </a>
+        <a
+          href="images/portfolio/disantinni.jpg"
+          data-img="images/portfolio/disantinni.jpg"
+          data-height="3346"
+          data-width="1360"
+        >
+          <img src="images/portfolio/disantinni_thumb.jpg" alt="Di Santinni" />
+        </a>
+        <a
+          href="images/portfolio/fnac.jpg"
+          data-img="images/portfolio/fnac.jpg"
+          data-height="2430"
+          data-width="1360"
+        >
+          <img src="images/portfolio/fnac_thumb.jpg" alt="FNAC" />
+        </a>
+        <a
+          href="images/portfolio/toymania.jpg"
+          data-img="images/portfolio/toymania.jpg"
+          data-height="6317"
+          data-width="1360"
+        >
+          <img src="images/portfolio/toymania_thumb.jpg" alt="Toy Mania" />
+        </a>
+        <a
+          href="images/portfolio/thenorthface.jpg"
+          data-img="images/portfolio/thenorthface.jpg"
+          data-height="3872"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/thenorthface_thumb.jpg"
+            alt="The North Face"
+          />
+        </a>
+        <a
+          href="images/portfolio/sigvaris.jpg"
+          data-img="images/portfolio/sigvaris.jpg"
+          data-height="2695"
+          data-width="1360"
+        >
+          <img src="images/portfolio/sigvaris_thumb.jpg" alt="Sigvaris" />
+        </a>
+        <a
+          href="images/portfolio/mrcat.jpg"
+          data-img="images/portfolio/mrcat.jpg"
+          data-height="4615"
+          data-width="1360"
+        >
+          <img src="images/portfolio/mrcat_thumb.jpg" alt="Mr. Cat" />
+        </a>
+        <a
+          href="images/portfolio/nautex.jpg"
+          data-img="images/portfolio/nautex.jpg"
+          data-height="1976"
+          data-width="1360"
+        >
+          <img src="images/portfolio/nautex_thumb.jpg" alt="Nautex" />
+        </a>
+        <a
+          href="images/portfolio/LP-deloitte-ibm.jpg"
+          data-img="images/portfolio/LP-deloitte-ibm.jpg"
+          data-height="2700"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/LP-deloitte-ibm_thumb.jpg"
+            alt="LP - Deloitte IBM"
+          />
+        </a>
+        <a
+          href="images/portfolio/LP-deloitte-techtalents.jpg"
+          data-img="images/portfolio/LP-deloitte-techtalents.jpg"
+          data-height="5009"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/LP-deloitte-techtalents_thumb.jpg"
+            alt="LP - Deloitte Tech Talents"
+          />
+        </a>
+        <a
+          href="images/portfolio/LP-Deloitte-regtechibm.jpg"
+          data-img="images/portfolio/LP-Deloitte-regtechibm.jpg"
+          data-height="3865"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/LP-Deloitte-regtechibm_thumb.jpg"
+            alt="LP - Deloitte RegTech IBM"
+          />
+        </a>
+        <a
+          href="images/portfolio/LP-Deloitte-agenda2021.jpg"
+          data-img="images/portfolio/LP-Deloitte-agenda2021.jpg"
+          data-height="3905"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/LP-Deloitte-agenda2021_thumb.jpg"
+            alt="LP - Deloitte Agenda 2021"
+          />
+        </a>
+
+        <a
+          href="images/portfolio/LP-Deloitte-Singularity.jpg"
+          data-img="images/portfolio/LP-Deloitte-Singularity.jpg"
+          data-height="3564"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/LP-Deloitte-Singularity_thumb.jpg"
+            alt="LP - Deloitte Singularity"
+          />
+        </a>
+        <a
+          href="images/portfolio/LP-Deloitte-Lid.jpg"
+          data-img="images/portfolio/LP-Deloitte-Lid.jpg"
+          data-height="6421"
+          data-width="1360"
+        >
+          <img
+            src="images/portfolio/LP-Deloitte-Lid_thumb.jpg"
+            alt="LP - Deloitte Lid"
+          />
+        </a>
+        <a
+          class="html"
+          href="images/portfolio/LP-Deloitte-Risk.mp4"
+          data-height="804"
+          data-sources='[{"src": "images/portfolio/LP-Deloitte-Risk.mp4", "type": "video/mp4"}]'
+          target="_blank"
+          title="HTML video"
+        >
+          <img
+            src="images/portfolio/LP-Deloitte-Risk_thumb.jpg"
+            alt="LP - Deloitte Risk Platform"
+          />
+        </a>
+        <a
+          class="html"
+          href="images/portfolio/LP-Deloitte-Ventures.mp4"
+          data-height="804"
+          data-sources='[{"src": "images/portfolio/LP-Deloitte-Ventures.mp4", "type": "video/mp4"}]'
+          target="_blank"
+          title="HTML video"
+        >
+          <img
+            src="images/portfolio/LP-Deloitte-Ventures_thumb.jpg"
+            alt="LP - Deloitte Ventures"
+          />
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="s-portfolio target-section">
+      <div class="row s-portfolio__header">
+        <div class="column large-6 medium-8 tab-full">
+          <div class="section-intro" data-aos="fade-up">
+            <h1 class="display-1">Contato</h1>
+            <p>Entre em contato comigo para oportunidades ou projetos.<br/>
+              Email:
+              <a href="mailto:seuemail@email.com" >
+                alexandrerytchko@gmail.com
+              </a>
+              <br />
+              WhatsApp:
+              <a
+                href="https://wa.me/5511989272467"
+                target="_blank"
+                
+              >
+                (11) 98927-2467
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="ss-go-top">
+      <a class="smoothscroll" title="Back to Top" href="#top">
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="50.000000pt"
+          height="50.000000pt"
+          viewBox="0 0 50.000000 50.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M133 358 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60
+                    -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2
+                    0 -55 -23 -116 -51z"
+            />
+            <path
+              d="M133 218 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60
+                    -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2
+                    0 -55 -23 -116 -51z"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <script>
+      const bp = BiggerPicture({
+        target: document.body,
+      });
+
+      const links = document.querySelectorAll("#gallery a");
+      links.forEach((link, index) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          bp.open({
+            items: links,
+            el: link,
+          });
+        });
+      });
+    </script>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
